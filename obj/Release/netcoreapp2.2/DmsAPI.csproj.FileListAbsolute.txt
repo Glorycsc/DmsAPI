@@ -1,0 +1,13 @@
+F:\abb-iot\DmsAPI\DmsAPI\bin\Release\netcoreapp2.2\DmsAPI.deps.json
+F:\abb-iot\DmsAPI\DmsAPI\bin\Release\netcoreapp2.2\DmsAPI.runtimeconfig.json
+F:\abb-iot\DmsAPI\DmsAPI\bin\Release\netcoreapp2.2\DmsAPI.runtimeconfig.dev.json
+F:\abb-iot\DmsAPI\DmsAPI\bin\Release\netcoreapp2.2\DmsAPI.dll
+F:\abb-iot\DmsAPI\DmsAPI\bin\Release\netcoreapp2.2\DmsAPI.pdb
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.csproj.CoreCompileInputs.cache
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.RazorAssemblyInfo.cache
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.RazorAssemblyInfo.cs
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.AssemblyInfoInputs.cache
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.AssemblyInfo.cs
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.RazorTargetAssemblyInfo.cache
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.dll
+F:\abb-iot\DmsAPI\DmsAPI\obj\Release\netcoreapp2.2\DmsAPI.pdb
