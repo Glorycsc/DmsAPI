@@ -1,14 +1,14 @@
 #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
 #For more information, please see https://aka.ms/containercompat
 
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1803 AS base
+FROM swr.cn-north-4.myhuaweicloud.com/mobiliya/dotnet-core-aspnet:2.2 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk-nanoserver-1803 AS build
+FROM swr.cn-north-4.myhuaweicloud.com/mobiliya/dotnet-core-sdk:2.2 AS build
 WORKDIR /src
-COPY ["DmsAPI/DmsAPI.csproj", "DmsAPI/"]
+COPY ["DmsAPI.csproj", "DmsAPI/"]
 RUN dotnet restore "DmsAPI/DmsAPI.csproj"
 COPY . .
 WORKDIR "/src/DmsAPI"
