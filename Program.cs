@@ -17,8 +17,17 @@ namespace DmsAPI
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
+           
+            new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddCommandLine(args) //添加对命令参数的支持
+                .Build();
+
+            return WebHost.CreateDefaultBuilder(args)
+                //.UseUrls("http://localhost:5001", "http://localhost:5004")
                 .UseStartup<Startup>();
+        }
     }
 }

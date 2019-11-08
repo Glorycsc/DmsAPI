@@ -8,10 +8,8 @@ EXPOSE 443
 
 FROM swr.cn-north-4.myhuaweicloud.com/mobiliya/dotnet-core-sdk:2.2 AS build
 WORKDIR /src
-COPY ["DmsAPI.csproj", "DmsAPI/"]
-RUN dotnet restore "DmsAPI/DmsAPI.csproj"
 COPY . .
-WORKDIR "/src/DmsAPI"
+RUN dotnet restore "DmsAPI.csproj"
 RUN dotnet build "DmsAPI.csproj" -c Release -o /app
 
 FROM build AS publish
@@ -20,4 +18,5 @@ RUN dotnet publish "DmsAPI.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
+#EXPOSE 8080
 ENTRYPOINT ["dotnet", "DmsAPI.dll"]
